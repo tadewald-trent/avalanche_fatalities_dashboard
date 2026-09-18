@@ -152,16 +152,20 @@ docs/
 design/
   avalanche_dashboard_theme.json   Power BI theme file (colorblind-checked
                                    categorical palette)
+LICENSE                covers the code and analysis in this repo (not the
+                        underlying CAIC data; see Data above)
 ```
-
-The `.pbix` file itself isn't in this repo yet; see below.
 
 ## Viewing this project
 
 **[Live dashboard](https://app.powerbi.com/view?r=eyJrIjoiODVlOTQyN2UtNzk3Ny00MTBjLTlhNDctYTk4OWQ5YjNkMDk4IiwidCI6IjdjODEzYjU2LWNlNTctNDdlZS04NjE5LTZlZGU1YzU3OGZjMyJ9)**,
-published via Power BI's Publish to Web, no sign-in required. The `.pbix`
-file itself isn't in this repo yet (see **Repo structure** above); the
-published link is the primary way to view the report for now.
+published via Power BI's Publish to Web, no sign-in required.
+
+## License
+
+MIT for the code, scripts, and analysis in this repo; see
+[`LICENSE`](LICENSE). The underlying CAIC data isn't covered by that license
+and carries its own citation requirement; see **Data** above.
 
 ## Author
 

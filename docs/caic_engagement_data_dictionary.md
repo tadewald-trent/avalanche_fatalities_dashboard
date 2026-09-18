@@ -98,7 +98,7 @@ before being treated as exact. Source: `CAIC_FY25AnnualReport_Final_Web.pdf`.
 ## Citation
 
 Colorado Avalanche Information Center, Annual Reports FY2015-16 through
-FY2024-25. Compiled manually, October 2026.
+FY2024-25. Compiled manually, 2026.
 
 **Note on `source_pdfs.csv` (rebuilt 2026-09-18):** the original per-row
 citation file was lost before this project's files were fully backed up.
