@@ -71,8 +71,7 @@ source, live in [`docs/research_questions.md`](docs/research_questions.md)
   nationwide. See [`docs/fact_table_data_dictionary.md`](docs/fact_table_data_dictionary.md).
 - **CAIC engagement proxy**: website/app usage figures, FY2015-16 through
   FY2024-25, hand-transcribed from ten years of CAIC's own annual report
-  PDFs (six of them only recoverable via the Wayback Machine). See
-  [`docs/caic_engagement_data_dictionary.md`](docs/caic_engagement_data_dictionary.md)
+  PDFs. See [`docs/caic_engagement_data_dictionary.md`](docs/caic_engagement_data_dictionary.md)
   and [`data/processed/source_pdfs.csv`](data/processed/source_pdfs.csv) for
   the exact source and retrieval method behind every value.
 - Categorical dimension tables (`ActivityCategory`, `Month`) built and

@@ -98,6 +98,25 @@ before being treated as exact. Source: `CAIC_FY25AnnualReport_Final_Web.pdf`.
 ## Citation
 
 Colorado Avalanche Information Center, Annual Reports FY2015-16 through
-FY2024-25. Individual report PDFs archived via the Internet Archive Wayback
-Machine (FY15-16 through FY20-21) and avalanche.state.co.us direct download
-(FY21-22 through FY24-25). Compiled manually, October 2026.
+FY2024-25. Compiled manually, October 2026.
+
+**Note on `source_pdfs.csv` (rebuilt 2026-09-18):** the original per-row
+citation file was lost before this project's files were fully backed up.
+It was rebuilt from scratch by re-locating each of the 10 report PDFs and
+re-verifying the fatality count and website/app numbers in each one against
+this table, all 10 matched exactly. Nine of the ten (FY15-16 through
+FY23-24) turned out to have a more durable public copy than the original
+CAIC website or Wayback Machine: the Colorado State Publications Library's
+permanent depository (`spl.cde.state.co.us`), which is what `source_pdfs.csv`
+now cites for those years. FY24-25 isn't in that depository yet, so it's
+cited directly from `avalanche.state.co.us`.
+
+One thing that turned up during this re-verification, worth a look: the
+FY21-22 report (`CAIC_FY22AnnualReport_Final_Small.pdf`) does appear to
+state "seven people killed" directly in its text, which conflicts with this
+table's `fatalities_source = accident_database_backfill` for that row. The
+number itself (7) is correct either way, since it matches the independently
+computed accident-database count, but the claim that it was backfilled
+rather than report-stated may be a leftover error from the original
+transcription. Worth a quick look at the actual report text before deciding
+whether to correct `fatalities_source` for FY21-22.
