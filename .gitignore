@@ -1,0 +1,12 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Power BI (add back explicitly if/when you commit the .pbix)
+*.pbix.bak
+~$*.pbix

@@ -1,0 +1,11 @@
+fiscal_year,avy_year,website_metric_type,website_metric_value,website_users,website_metric_suspect,app_metric_type,app_metric_value,app_users,fatalities_reported,fatalities_source,source_pdf,fatalities_accident_db,fatalities_match
+FY15-16,2016,visits,1732675,,False,downloads,9175.0,,5,report_text,caic_annual-report_15-16.pdf,5,True
+FY16-17,2017,visits,1732675,,True,downloads,11410.0,,1,report_text,FoCAIC_annual-report_16-17_final.pdf,1,True
+FY17-18,2018,pageviews,1340863,,False,downloads,12745.0,,3,report_text,CAIC_Annual_Report_2017-18.pdf,3,True
+FY18-19,2019,pageviews,2768019,,False,downloads,13745.0,,8,report_text,FY19AnnualReport.pdf,8,True
+FY19-20,2020,pageviews,2176198,,False,active_users,18000.0,18000.0,6,report_text,CAIC_FY20AnnualReport_Final_Web-large.pdf,6,True
+FY20-21,2021,pageviews,2882948,416936.0,False,screen_views,1100000.0,22000.0,12,report_text,CAIC_FY21AnnualReport_Web-large_Jan11.pdf,12,True
+FY21-22,2022,pageviews,2527632,388638.0,False,pageviews,1027218.0,19866.0,7,accident_database_backfill,CAIC_FY22AnnualReport_Final_Small.pdf,7,True
+FY22-23,2023,pageviews_rounded,3100000,,False,,,,11,report_text,2022-2023 Annual Report.pdf,11,True
+FY23-24,2024,pageviews,3027380,,False,,,,2,report_text,Friends of CAIC and CAIC FY24 Annual Report.pdf,2,True
+FY24-25,2025,pageviews,2100000,257515.0,False,pageviews,1786374.0,21922.0,3,report_text,CAIC_FY25AnnualReport_Final_Web.pdf,3,True

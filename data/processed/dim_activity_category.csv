@@ -1,0 +1,25 @@
+PrimaryActivity,ActivityCategory,ActivityCategorySortOrder
+Backcountry Tourer,Backcountry Recreation,1
+Hiker,Backcountry Recreation,1
+Hybrid Tourer,Backcountry Recreation,1
+Sidecountry Rider,Backcountry Recreation,1
+Hybrid Rider,Motorized Backcountry Recreation,2
+Snowbiker,Motorized Backcountry Recreation,2
+Snowmobiler,Motorized Backcountry Recreation,2
+Inbounds Rider,Inbounds (Avalanche-Controlled Terrain),3
+Climber,Climbing/Mountaineering,4
+Human-Powered Guide,Guides & Guided Clients,5
+Human-Powered Guided Client,Guides & Guided Clients,5
+Mechanized Guide,Guides & Guided Clients,5
+Mechanized Guided Client,Guides & Guided Clients,5
+Highway Personnel,"Occupational, Passive & Other",6
+Hunter,"Occupational, Passive & Other",6
+Miner,"Occupational, Passive & Other",6
+Misc Recreation,"Occupational, Passive & Other",6
+Motorist,"Occupational, Passive & Other",6
+Others at Work,"Occupational, Passive & Other",6
+Ranger,"Occupational, Passive & Other",6
+Rescuer,"Occupational, Passive & Other",6
+Resident,"Occupational, Passive & Other",6
+Ski Patroller,"Occupational, Passive & Other",6
+Snowplayer,"Occupational, Passive & Other",6
