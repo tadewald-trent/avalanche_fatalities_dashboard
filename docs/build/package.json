@@ -1,0 +1,11 @@
+{
+  "name": "research-questions-docx-build",
+  "private": true,
+  "description": "Generates docs/research_questions.docx from docs/research_questions.md",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "docx": "^9.14.0"
+  }
+}

@@ -12,6 +12,11 @@ and a hand-assembled secondary dataset with its own quirks. Working through
 that mess honestly, flagging what's uncertain instead of smoothing over it,
 is as much the point of this project as any individual finding.
 
+**[One-page project summary](docs/colorado_avalanche_dashboard_summary.pdf)**
+a quick-view PDF covering skills demonstrated, headline findings, and links,
+for anyone who wants the gist before digging into the full dashboard or
+write-up below.
+
 ## The question behind the project
 
 Backcountry gear, avalanche forecasting, and avalanche education have all
@@ -54,12 +59,12 @@ an honesty page that qualifies the other five, which is why it isn't numbered.
 
 | Page | Question | Headline finding |
 |---|---|---|
-| **Q1**: National Trend | How have avalanche fatalities changed nationally over the last 75 seasons? | Fatalities rose sharply from the 1950s through the 1990s (~4→22 per season, 5x), then flattened; the last three decades all sit in a 24-28/season band. The outlier: 2020-21, the deadliest season on record (37 deaths), plausibly a pandemic-era surge of inexperienced backcountry users. |
-| **Q2**: Human Factors | What activities are most associated with fatal accidents, and has that mix changed over 75 years? | Two structural shifts: occupational/passive exposure collapsed (55%→under 10% since the 2000s), while motorized backcountry recreation rose from ~0% to over 40%, tracking the real snowmobile-access boom. |
-| **Q3**: Seasonality & Geography | When and where do fatal accidents cluster, and how does Colorado compare to the rest of the nation? | Both regions peak Feb-March, but Colorado runs hotter into March; the rest of the nation has a longer late-spring tail. Road incidents are ~3x more common, share-wise, in Colorado. |
-| **Q4**: Multi-Fatality Events | How often does a single avalanche kill more than one person? | Multi-fatality events are 16% of all accidents but 32% of all deaths. Climbing/Mountaineering has by far the highest multi-fatality rate (37.5% vs. 11-20% elsewhere), plausibly reflecting roped travel. |
-| **Q5**: Readiness vs. Fatalities | Does rising engagement with CAIC's safety information track with fewer deaths? | Engagement has a real upward trend (r≈0.57), up ~40% over the decade, while fatalities show almost no trend at all (r≈0.16), moving mostly with each season's snowpack danger instead. Consistent with declining risk-per-person, but not proof of it. |
-| **Appendix**: Data Quality & Methodology | How has the record-keeping itself changed, and what does that mean for how much weight the findings above can bear? | Location data became reliable starting in the 2000s; narrative descriptions only from the 2010s. Investigator judgment, not a standardized taxonomy, drives most categorical fields. |
+| **Q1**: National Trend | How have avalanche fatalities changed nationally over the last 75 seasons? | Fatalities rose sharply from the 1950s through the 1990s, then flattened; today's average is 3.6x the early-era baseline. The deadliest season on record, 2020-21 (37 deaths), plausibly reflects a pandemic-era surge of inexperienced backcountry users. Rising counts overall reflect both more backcountry use and better record-keeping, not necessarily rising danger. |
+| **Q2**: Human Factors | What activities are most associated with fatal accidents, and has that mix changed over 75 years? | Two structural shifts: occupational/passive exposure collapsed (54%→3% since the 1950s/60s), while motorized backcountry recreation rose from 1% to 31%, tracking the real snowmobile-access boom. Motorized backcountry recreation is now one of the two largest categories. |
+| **Q3**: Seasonality & Geography | When and where do fatal accidents cluster, and how does Colorado compare to the rest of the nation? | Colorado's season runs hotter into March (20.7% vs. 17.0% nationally), while the rest of the nation's fatalities run later into spring, likely reflecting high-elevation glaciated terrain in Alaska and Washington. Road incidents are 3x more common, share-wise, in Colorado, plausibly tied to its mountain highway corridors, though that rests on just 17 incidents total. |
+| **Q4**: Multi-Fatality Events | How often does a single avalanche kill more than one person? | Multi-fatality events are 16% of all accidents but 32% of all deaths. Climbing/Mountaineering has the highest multi-fatality rate, likely reflecting roped travel where one avalanche can catch an entire party. Survival rate also differs by event type (32% single-fatality vs. 24% multi-fatality), though that comparison rests on a modern-era (2013-2025) subset of 261 events. |
+| **Q5**: Readiness vs. Fatalities | Does rising engagement with CAIC's safety information track with fewer deaths? | Engagement shows a moderate upward trend (r≈0.57 vs. year) and is up 41% since 2016, while fatalities show no meaningful trend (r≈0.16 vs. year), moving mostly with each season's snowpack danger instead. Consistent with declining risk-per-person, but not proof of it. |
+| **Appendix**: Data Quality & Methodology | How has the record-keeping itself changed, and what does that mean for how much weight the findings above can bear? | Location data became reliable starting in the 2000s; narrative descriptions only from the 2010s, both reaching 100% by the 2020s. Investigator judgment, not a standardized taxonomy, drives most categorical fields. |
 
 Full write-ups, including caveats, build notes, and every named number's
 source, live in [`docs/research_questions.md`](docs/research_questions.md)

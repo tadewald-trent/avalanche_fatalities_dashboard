@@ -92,12 +92,13 @@ snowpack conditions.
 **Status: Done.** Built as a two-chart page (`Q2`): a category breakdown
 (`Total Fatalities` by `ActivityCategory`) and a 100%-stacked composition
 chart by `Decade`, with a named finding — the collapse of occupational/
-passive exposure (55%→under 10% since the 2000s) and the rise of motorized
-backcountry recreation (0%→over 40% by the 2000s, tracking the real
-snowmobile-access boom) are the two biggest structural shifts in who
-avalanches kill. Both charts checked against `PrimaryActivity`'s full
-75-year coverage (zero missing values in any decade) and pass a face-
-validity check against known avalanche-sport history.
+passive exposure (54%→3% since the 1950s/60s) and the rise of motorized
+backcountry recreation (1%→31%, tracking the real snowmobile-access boom)
+are the two biggest structural shifts in who avalanches kill; motorized
+backcountry recreation is now one of the two largest categories. Both
+charts checked against `PrimaryActivity`'s full 75-year coverage (zero
+missing values in any decade) and pass a face-validity check against known
+avalanche-sport history.
 
 **Scoping decision, 2026-09-15:** a third piece was designed but
 deliberately cut — a "modern-era circumstances" panel using
@@ -111,9 +112,14 @@ Q2 into the "circumstances" half of the question (group exposure, incident
 severity), but on meaningfully weaker evidence than the two charts already
 built. Cut in favor of keeping Q2 resting on its strongest material rather
 than diluting it with a thin, exploratory add-on — not because the idea was
-wrong, just lower priority than the rest of the project's scope. Worth
-revisiting later if there's time, but not a gap that needs filling before
-this page is considered done.
+wrong, just lower priority than the rest of the project's scope. **Update,
+Q4 build:** the `PeopleCaughtParsed` field didn't stay cut for good; it
+resurfaced on Q4 as a single-fatality-vs-multi-fatality survival-rate KPI,
+scoped to the same 2013-2025 window and labeled with its small sample size
+there. The "circumstances" panel itself (mentions-injured, critical-burial,
+alternate-cause) is still cut from Q2 and remains a possible future
+addition, not a gap that needs filling before either page is considered
+done.
 
 **Caveats carried onto the page:** activity categories are an analytical
 judgment call, not a CAIC-defined taxonomy (see
@@ -283,9 +289,11 @@ against the canonical CSV before documenting (project convention — see Q4
 and the appendix for the same cross-check habit) — and this cross-check
 caught a real error in an earlier draft of this write-up, worth recording
 as its own small lesson: engagement has a real upward trend against year
-(r≈0.57, excluding the flagged FY16-17 value), rising roughly 40% comparing
+(r≈0.57, excluding the flagged FY16-17 value), rising ≈41% comparing
 the first three valid years' average (FY15-16–FY18-19, ≈1.95M) to the most
-recent three (FY22-23–FY24-25, ≈2.74M). Fatalities show almost no
+recent three (FY22-23–FY24-25, ≈2.74M) — the dashboard's "Website
+Engagement Growth Since 2016" KPI shows the same figure, rounded to +41%.
+Fatalities show almost no
 relationship to year over the same span (r≈0.16) — an earlier pass at this
 number wrongly excluded FY16-17 from the *fatalities* series too (that
 year's fatality count isn't suspect, only its website figure is), which
@@ -295,17 +303,20 @@ gives the correct r≈0.16 — still a weak relationship, still governed mostly
 by each season's snowpack rather than by engagement's rise, just not quite
 as flat as the earlier miscalculation suggested.
 
-**Finding, as written on the page:** "Website engagement and Colorado
-fatalities move largely independently of each other over this decade.
-Engagement has a real upward relationship with time (moderate positive
-correlation, r ≈ 0.57, excluding the flagged FY16-17 value): roughly 40%
-higher in the most recent three years than the first three. Fatalities
-show almost no relationship to time at all (r ≈ 0.16), bouncing up and
-down mainly with how dangerous each season's snowpack was rather than
-tracking engagement. That pattern fits with the idea that as more people
-prepare for backcountry trips, risk per person is going down, even though
-we can't say for sure why — better gear, more education, and more
-cautious decisions could all be playing a part."
+**Finding, as written on the page:** the KPI row shows four cards (`Avg CO
+Fatalities Per Season`: 5.80, `Website Engagement Growth Since 2016`: +41%,
+`Correlation With Engagement`: "Moderate Upward Trend" with "r ~ 0.57 vs.
+year" as supporting detail, `Correlation With Fatalities`: "No Meaningful
+Trend" with "r ~ 0.16 vs. year"). The two correlation cards were
+deliberately split and given plain-language labels rather than raw
+r-values, since two unlabeled correlation numbers side by side on a page
+about engagement-vs-fatalities invited readers to assume they measured the
+relationship between those two variables directly, when both actually
+measure each variable's own trend against year. Below the chart: "Fatalities
+bounce up and down mainly with how dangerous each season's snowpack was,
+not with engagement. That pattern is consistent with risk per person going
+down as more people prepare, though we can't say for sure why, whether
+better gear, more education, or more cautious decisions."
 
 **Build note:** the duplicate FY16-17 website figure (see
 `caic_engagement_data_dictionary.md` Caveat 2) needed the same
@@ -316,18 +327,18 @@ gap on the chart rather than either the fake duplicate value or a
 fabricated substitute. Confirmed values match the source CSV exactly.
 
 **Caveats, as written on the page:** "This measures engagement with CAIC's
-safety information, not a literal participant headcount — it can't
-distinguish one person checking daily from many people checking once, and
-some traffic is likely storm- or news-driven rather than trip planning.
-The metric itself changes definition mid-series (website traffic switched
-from 'visits' to 'pageviews' between FY17 and FY18, not directly
-comparable), and the 2017 gap in the chart is a known duplicate value in
-CAIC's own report rather than missing data. FY21-22's fatality count is
-backfilled rather than report-stated, and 10 seasons is enough to see a
-direction, not enough to prove one. A peer-reviewed 2022 study using
+safety information, not a participant headcount — it can't tell one
+person checking daily from many checking once, and some traffic is
+storm- or news-driven rather than trip-planning. Ten seasons is enough to
+see a direction, not enough to prove one. 2017 excluded as suspected
+duplicate data entry (see Data Quality and Methodology)." The metric
+definition-change and FY21-22 backfill caveats moved to the Data Quality
+and Methodology appendix rather than repeating on this page; see the
+appendix below for the current wording. A peer-reviewed 2022 study using
 CAIC's own fatality data tried to track avalanche-education trends over a
 similar window and had to drop the analysis entirely — 78% of the
-underlying reports didn't record it."
+underlying reports didn't record it (background context, not on the page
+itself).
 
 **Naming note:** this page is labeled `Q5` in Power BI. The page previously
 documented here as Q5 (`Data Quality and Methodology`) has moved to an
@@ -372,18 +383,32 @@ single centerpiece chart (`% HasLocation` and `% HasDescription` by
 changed over 75 years" story on its own: both fields sit at 0% through the
 1950s-1990s, `% HasLocation` climbs starting in the 2000s (19.8%, then
 84.4% by the 2010s), `% HasDescription` only starts climbing a decade later
-(63.8% in the 2010s), and both reach 100% by the 2020s. The four caveats
-carried onto the page: (1) investigator judgment — `Setting`,
-`PrimaryActivity`, and other categorical fields reflect individual
-investigators' judgment, not a standardized taxonomy (Spencer Logan, CAIC);
-(2) Colorado vs. rest of nation — Colorado's rows were investigated
-directly by CAIC staff, other states' only compiled from other sources,
-making Colorado the most internally consistent subset (ties directly to
-Q3's framing); (3) the CAIC engagement metric used on Q5 changes its own
-definition mid-series and carries a suspected duplicate (FY16-17) and a
-backfilled value (FY21-22); (4) `AvyYear` 2025 is CAIC's own flagged
-"Current Year" as of this export and should be read as provisional, not a
-finalized season.
+(63.8% in the 2010s), and both reach 100% by the 2020s.
+
+**The four caveats, as written on the page:**
+
+1. **Investigator judgment:** "Setting, PrimaryActivity, and other
+   categorical fields reflect individual investigators' judgment at the
+   time, not a standardized taxonomy applied consistently across 75 years
+   (confirmed by CAIC's Spencer Logan). An apparent shift in the data may
+   partly reflect changing investigator conventions, not just changing
+   conditions on the mountain."
+2. **Colorado vs. rest of nation:** "Colorado's own rows were investigated
+   directly by CAIC staff; incidents in other states were only compiled
+   from other sources. Colorado's data is the most internally consistent
+   subset in this dataset, a reason to trust Colorado-specific comparisons
+   (like Q3) more than nationwide ones."
+3. **Engagement metric changes:** "The CAIC engagement proxy used on Q5
+   switches definitions mid-series: visits through FY17, then pageviews
+   from FY18 on. A separate 'users' figure was added alongside pageviews
+   starting FY21, not as a third replacement stage. Has one suspected
+   duplicate data point (FY16-17) and one backfilled fatality count
+   (FY21-22) rather than report-stated. It's directionally useful, not a
+   single clean line."
+4. **2025 is provisional:** "CAIC's own raw data flags 2024-25 as still
+   'Current Year' as of this export, not a closed, finalized season. Any
+   total or chart including AvyYear 2025 should be read as provisional,
+   not final."
 
 **Build note:** building the coverage chart surfaced a second real DAX
 lesson (the first being the `AvyYear` Text-import bug from Q4). A `DIVIDE`

@@ -38,9 +38,11 @@ PDFs were only recoverable via Wayback Machine snapshots after CAIC's old
 **1. The metrics change definition mid-series.** This is the single most
 important thing to understand before putting this on a dashboard.
 
-- Website: `visits` (FY16-17) → `pageviews` (FY18-24) → `pageviews` + `users`
-  reported together (FY21-25 only). A "visit" and a "pageview" are not the same
-  statistic, and "users" (unique people) simply isn't available before FY21.
+- Website: `visits` (FY15-16, FY16-17) → `pageviews` (FY17-18 onward). A
+  "visit" and a "pageview" are not the same statistic. Starting FY20-21, CAIC
+  also began reporting a separate `users` (unique people) figure alongside
+  pageviews — this is an additional column, not a third metric type that
+  replaces pageviews, and "users" simply isn't available before FY20-21.
 - App: `downloads` (FY16-19) → `active_users` (FY20) → `screen_views` + `users`
   (FY21, FY22, FY25) → not reported at all (FY23, FY24).
 
@@ -88,12 +90,15 @@ sounding explanation (rounding) over a less comfortable one (data entry
 error). The `caic_engagement_by_year.csv` value now correctly matches this
 report; `build_caic_engagement.py` documents the correction inline.
 
-**6. FY24-25's value (2,100,000) is also suspiciously round and hasn't been
-double-checked against the source PDF.** Unlike FY22-23 (before the fix
-above) it's labeled plain `pageviews`, not `pageviews_rounded`, so it may be
-genuinely precise — but given Caveat 5 just turned up a real transcription
-error at a similarly round number, this one deserves the same scrutiny
-before being treated as exact. Source: `CAIC_FY25AnnualReport_Final_Web.pdf`.
+**6. FY24-25's value (2,100,000) was suspiciously round and has now been
+verified against the source PDF, 2026-10-23.** Page 6 ("Media Overview")
+of `CAIC_FY25AnnualReport_Final_Web.pdf` states the figure plainly:
+"2,100,000" labeled "Pageviews," with "257,515" labeled "Users" right next
+to it, matching this table's `website_metric_value` and `website_users`
+exactly. It's the literal number CAIC reports, not a transcription
+artifact. Unlike FY22-23, no percentage-change figure is given this year
+to cross-check it against independently, so the verification here rests on
+the primary source alone rather than an internal-consistency check too.
 
 ## Citation
 

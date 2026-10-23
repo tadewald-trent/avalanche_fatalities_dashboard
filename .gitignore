@@ -7,6 +7,9 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 
+# Node (docs/build/ docx generator)
+node_modules/
+
 # Power BI (add back explicitly if/when you commit the .pbix)
 *.pbix.bak
 ~$*.pbix
