@@ -24,12 +24,14 @@ last 75 seasons?
 
 **Why it matters:** A rising death count on its own is ambiguous — it could
 mean the activity is getting more dangerous, or it could just mean more
-people are doing it. Tremper's core argument is that avalanche risk is
-mostly a human-factors problem, not a snowpack problem; a naive "deaths are
-up" headline without an exposure denominator plays directly into the wrong
-conclusion. This page can only show the raw national trend — the actual
-exposure-denominator comparison, using CAIC's own engagement data as a
-Colorado-specific proxy, lives entirely on Q5.
+people are doing it. Bruce Tremper, who spent nearly 30 years as director
+of the Forest Service's Utah Avalanche Center and wrote "Staying Alive in
+Avalanche Terrain," argues that avalanche risk is mostly a human-factors
+problem, not a snowpack problem; a naive "deaths are up" headline without
+an exposure denominator plays directly into the wrong conclusion. This
+page can only show the raw national trend — the actual exposure-denominator
+comparison, using CAIC's own engagement data as a Colorado-specific proxy,
+lives entirely on Q5.
 
 **Supports it:** `Total Fatalities`, `Fatalities 5yr Avg`, `Avg Fatalities
 Per Season`, `Deadliest Season Fatalities`/`Label`, `Decade` (all built).
