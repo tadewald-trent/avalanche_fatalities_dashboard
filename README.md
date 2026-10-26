@@ -163,7 +163,7 @@ LICENSE                covers the code and analysis in this repo (not the
 
 ## Viewing this project
 
-**[Live dashboard](https://app.powerbi.com/view?r=eyJrIjoiODVlOTQyN2UtNzk3Ny00MTBjLTlhNDctYTk4OWQ5YjNkMDk4IiwidCI6IjdjODEzYjU2LWNlNTctNDdlZS04NjE5LTZlZGU1YzU3OGZjMyJ9)**,
+**[Live dashboard](https://app.powerbi.com/view?r=eyJrIjoiODVlOTQyN2UtNzk3Ny00MTBjLTlhNDctYTk4OWQ5YjNkMDk4IiwidCI6IjdjODEzYjU2LWNlNTctNDdlZS04NjE5LTZlZGU1YzU3OGZjMyJ9&pageName=677545426339757a50aa)**,
 published via Power BI's Publish to Web, no sign-in required.
 
 ## License
